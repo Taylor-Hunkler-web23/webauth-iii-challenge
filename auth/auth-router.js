@@ -52,7 +52,7 @@ router.post('/login', (req, res) => {
 function getJwtToken(username) {
   const payload = {
     username,
-    role: 'student'
+   
   }
 
   const secret = process.env.JWT_SECRET || 'safe';
